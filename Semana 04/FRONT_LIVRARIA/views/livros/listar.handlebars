@@ -1,0 +1,22 @@
+<h1 class="text-center my-3">Lista de Livros</h1>
+<table class="table">
+<div class="row">
+  <div class="col-12">
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+      {{#each livro}}
+        <th><center><img src="{{this.link}}" alt="mostrar imagem" width=150
+        height=150><br>
+          <strong>{{this.titulo}}</strong><br>
+          {{this.autor}} <br>
+          R${{this.preco}} <br>
+          cod. Produto:{{this.id_livro}}<br>
+        </th>
+      {{/each}}
+      </tr>
+    </tbody>
+  </div>
+</div>
+</table>
